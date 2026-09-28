@@ -73,5 +73,43 @@
     $('#formReset').addEventListener('click', () => { form.reset(); $('#formOk').classList.remove('show'); });
   }
 
+  // Filtro de galería (fotos / videos)
+  $$('.media-filter').forEach(bar => {
+    const grid = bar.nextElementSibling;
+    bar.addEventListener('click', e => {
+      const b = e.target.closest('button'); if (!b) return;
+      $$('button', bar).forEach(x => { x.classList.toggle('on', x === b); x.setAttribute('aria-selected', x === b); });
+      $$('.photo', grid).forEach(f => f.hidden = b.dataset.filter !== 'all' && f.dataset.type !== b.dataset.filter);
+    });
+  });
+
+  // Lightbox para fotos de las galerías
+  const gPhotos = $$('.gallery .photo:not(.video)');
+  if (gPhotos.length) {
+    const lb = document.createElement('div');
+    lb.className = 'lightbox'; lb.setAttribute('role', 'dialog'); lb.setAttribute('aria-modal', 'true');
+    lb.innerHTML = '<img alt=""><p></p><button class="lb-close" aria-label="Cerrar">×</button><button class="lb-prev" aria-label="Anterior">‹</button><button class="lb-next" aria-label="Siguiente">›</button>';
+    document.body.appendChild(lb);
+    let list = [], idx = 0;
+    const show = i => { idx = (i + list.length) % list.length; const im = $('img', list[idx]); $('img', lb).src = im.src; $('img', lb).alt = im.alt; $('p', lb).textContent = im.alt; };
+    const closeLb = () => { lb.classList.remove('open'); document.body.style.overflow = ''; };
+    gPhotos.forEach(f => f.addEventListener('click', () => {
+      if (f.classList.contains('empty')) return;
+      list = $$('.photo:not(.video):not(.empty)', f.closest('.gallery')).filter(x => !x.hidden);
+      show(list.indexOf(f)); lb.classList.add('open'); document.body.style.overflow = 'hidden';
+    }));
+    lb.addEventListener('click', e => {
+      if (e.target.closest('.lb-prev')) show(idx - 1);
+      else if (e.target.closest('.lb-next')) show(idx + 1);
+      else if (e.target === lb || e.target.closest('.lb-close')) closeLb();
+    });
+    addEventListener('keydown', e => {
+      if (!lb.classList.contains('open')) return;
+      if (e.key === 'Escape') closeLb();
+      if (e.key === 'ArrowLeft') show(idx - 1);
+      if (e.key === 'ArrowRight') show(idx + 1);
+    });
+  }
+
   $$('.year').forEach(y => y.textContent = new Date().getFullYear());
 })();

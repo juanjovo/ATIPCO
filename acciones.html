@@ -8,11 +8,11 @@
 <meta property="og:title" content="Acciones · ATIPCO">
 <meta property="og:description" content="Casos de éxito y acciones de la Fundación A Tiempo por Colombia: entrega de vivienda en Trujillo, jornadas de bienestar en salud, atención jurídica, formación y ayuda humanitaria.">
 <meta name="theme-color" content="#0B3270">
-<link rel="icon" href="ISOTIPO_ATIPCO.png">
+<link rel="icon" href="img/ISOTIPO_ATIPCO.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <div class="alert" role="region" aria-label="Emergencia">
@@ -24,14 +24,14 @@
 </div>
 <header class="site-header">
   <nav class="wrap nav" aria-label="Principal">
-    <a href="index.html" class="logo" aria-label="ATIPCO, inicio"><img src="LOGO_ATIPCO.png" alt="ATIPCO · Fundación A Tiempo por Colombia" width="866" height="218"></a>
+    <a href="index.html" class="logo" aria-label="ATIPCO, inicio"><img src="img/LOGO_ATIPCO.png" alt="ATIPCO · Fundación A Tiempo por Colombia" width="866" height="218"></a>
     <ul class="menu" id="menu"><li><a href="index.html">Inicio</a></li><li><a href="nosotros.html">Nosotros</a></li><li><a href="programas.html">Programas</a></li><li><a href="acciones.html" aria-current="page">Acciones</a></li><li><a href="transparencia.html">Transparencia</a></li><li><a href="contacto.html">Contacto</a></li></ul>
     <button class="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span></button>
   </nav>
 </header>
 <main>
 <section class="page-hero">
-  <img class="wm" src="ISOTIPO_ATIPCO.png" alt="" aria-hidden="true">
+  <img class="wm" src="img/ISOTIPO_ATIPCO.png" alt="" aria-hidden="true">
   <div class="wrap">
     <nav class="crumbs" aria-label="Ruta"><a href="index.html">Inicio</a><span aria-hidden="true">/</span><span>Acciones</span></nav>
     <h1>Acciones realizadas</h1>
@@ -43,7 +43,7 @@
   <div class="wrap">
     <article class="case rv">
       <div class="case-media">
-        <figure class="photo p-yellow" data-file="FOTO_ATIPCO_07.jpg"><img src="FOTO_ATIPCO_07.jpg" alt="Entrega de la vivienda" loading="lazy" onerror="this.parentNode.classList.add('empty')"><figcaption><i style="background:var(--yellow)"></i>Entrega de la vivienda</figcaption></figure>
+        <figure class="photo p-yellow" data-file="FOTO_ATIPCO_07.jpg"><img src="img/FOTO_ATIPCO_07.jpg" alt="Entrega de la vivienda" loading="lazy" onerror="this.parentNode.classList.add('empty')"><figcaption><i style="background:var(--yellow)"></i>Entrega de la vivienda</figcaption></figure>
         <div class="case-meta">
           <div><small>Lugar</small><b>Trujillo, Valle del Cauca</b></div>
           <div><small>Fecha</small><b>Enero 2026</b></div>
@@ -61,8 +61,57 @@
           <li style="--c:#1FA855"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3M15 8l2 2"/></svg></span><div><b>Entrega oficial · Enero 2026</b><small>La familia recibió su casa en Trujillo.</small></div></li>
         </ol>
         <div class="case-result"><b>Resultado:</b> una familia con acceso garantizado a una vivienda digna.</div>
+        <a class="link-arrow" href="#seguimiento-trujillo" style="display:inline-block;margin-top:18px">Ver seguimiento, fotos y videos ↓</a>
       </div>
     </article>
+
+    <div class="followup rv" id="seguimiento-trujillo">
+      <div class="gallery-head">
+        <div>
+          <span class="tag green">Seguimiento del caso</span>
+          <h3>La historia no termina con la entrega.</h3>
+          <p>Acompañamos a la familia después de recibir su vivienda. Aquí registramos cada visita.</p>
+        </div>
+      </div>
+
+      <div class="followup-grid">
+        <ol class="fu-timeline" aria-label="Visitas de seguimiento">
+          <li class="done">
+            <span class="fu-dot" aria-hidden="true"></span>
+            <div><small>Enero 2026</small><b>Entrega oficial de la vivienda</b><p>La familia recibe las llaves de su casa en Trujillo.</p></div>
+          </li>
+          <li>
+            <span class="fu-dot" aria-hidden="true"></span>
+            <div><small>Seguimiento 1 · <span class="pend">Fecha</span></small><b>Adaptación al nuevo hogar</b><p><span class="pend">Agregar: cómo se encuentra la familia</span></p></div>
+          </li>
+          <li>
+            <span class="fu-dot" aria-hidden="true"></span>
+            <div><small>Seguimiento 2 · <span class="pend">Fecha</span></small><b>Acceso a salud y educación</b><p><span class="pend">Agregar: avances de la madre y los niños</span></p></div>
+          </li>
+          <li class="next">
+            <span class="fu-dot" aria-hidden="true"></span>
+            <div><small>Próxima visita</small><b>Seguimiento en curso</b><p>Seguiremos compartiendo el avance de la familia.</p></div>
+          </li>
+        </ol>
+
+        <div class="fu-media">
+          <div class="media-filter" role="tablist" aria-label="Filtrar galería">
+            <button type="button" class="on" data-filter="all" role="tab" aria-selected="true">Todo</button>
+            <button type="button" data-filter="foto" role="tab" aria-selected="false">Fotos</button>
+            <button type="button" data-filter="video" role="tab" aria-selected="false">Videos</button>
+          </div>
+          <div class="gallery g-media">
+            <figure class="photo video" data-type="video" data-file="VIDEO_TRUJILLO_01.mp4"><video controls preload="metadata" playsinline poster="img/FOTO_TRUJILLO_01.jpg"><source src="video/VIDEO_TRUJILLO_01.mp4" type="video/mp4" onerror="this.closest('figure').classList.add('empty')"></video><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><figcaption><i style="background:var(--red)"></i>Video · Entrega de llaves</figcaption></figure>
+            <figure class="photo p-yellow" data-type="foto" data-file="FOTO_TRUJILLO_01.jpg"><img src="img/FOTO_TRUJILLO_01.jpg" alt="La familia frente a su nueva casa" loading="lazy" onerror="this.parentNode.classList.add('empty')"><figcaption><i style="background:var(--yellow)"></i>La familia en su casa</figcaption></figure>
+            <figure class="photo" data-type="foto" data-file="FOTO_TRUJILLO_02.jpg"><img src="img/FOTO_TRUJILLO_02.jpg" alt="Interior de la vivienda" loading="lazy" onerror="this.parentNode.classList.add('empty')"><figcaption><i style="background:var(--blue)"></i>Interior de la vivienda</figcaption></figure>
+            <figure class="photo p-red video" data-type="video" data-file="VIDEO_TRUJILLO_02.mp4"><video controls preload="metadata" playsinline poster="img/FOTO_TRUJILLO_03.jpg"><source src="video/VIDEO_TRUJILLO_02.mp4" type="video/mp4" onerror="this.closest('figure').classList.add('empty')"></video><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><figcaption><i style="background:var(--red)"></i>Video · Testimonio de la familia</figcaption></figure>
+            <figure class="photo p-yellow" data-type="foto" data-file="FOTO_TRUJILLO_03.jpg"><img src="img/FOTO_TRUJILLO_03.jpg" alt="Visita de seguimiento" loading="lazy" onerror="this.parentNode.classList.add('empty')"><figcaption><i style="background:#1FA855"></i>Visita de seguimiento</figcaption></figure>
+            <figure class="photo" data-type="foto" data-file="FOTO_TRUJILLO_04.jpg"><img src="img/FOTO_TRUJILLO_04.jpg" alt="Equipo ATIPCO con la familia" loading="lazy" onerror="this.parentNode.classList.add('empty')"><figcaption><i style="background:var(--navy)"></i>Equipo ATIPCO</figcaption></figure>
+          </div>
+          <p class="media-note"><span class="pend">Agregar: fotos en img/ (FOTO_TRUJILLO_01…04.jpg) y videos MP4 en video/ (VIDEO_TRUJILLO_01…02.mp4)</span></p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -78,7 +127,7 @@
         <p>Higiene oral, medicina general, optometría, actividades lúdico-recreativas para niños, olla comunitaria y cierre con cine al barrio, concertadas con líderes y comunidad.</p>
         <p style="margin-top:10px"><span class="pend">Agregar: fechas, barrios y personas atendidas</span></p>
       </div>
-      <figure class="photo p-yellow" data-file="FOTO_ATIPCO_08.jpg"><img src="FOTO_ATIPCO_08.jpg" alt="Jornada de bienestar" loading="lazy" onerror="this.parentNode.classList.add('empty')"><figcaption><i style="background:var(--yellow)"></i>Jornada de bienestar</figcaption></figure>
+      <figure class="photo p-yellow" data-file="FOTO_ATIPCO_08.jpg"><img src="img/FOTO_ATIPCO_08.jpg" alt="Jornada de bienestar" loading="lazy" onerror="this.parentNode.classList.add('empty')"><figcaption><i style="background:var(--yellow)"></i>Jornada de bienestar</figcaption></figure>
     </div>
     <div class="t-item rv">
       <div class="t-text">
@@ -87,7 +136,7 @@
         <p>Acompañamos a usuarios del sistema de salud frente a negativas injustificadas: derechos de petición, tutelas y gestión hasta lograr cirugías, medicamentos, transporte asistencial y procedimientos.</p>
         <p style="margin-top:10px"><span class="pend">Agregar: número de casos atendidos</span></p>
       </div>
-      <figure class="photo " data-file="FOTO_ATIPCO_01.jpg"><img src="FOTO_ATIPCO_01.jpg" alt="Atención jurídica" loading="lazy" onerror="this.parentNode.classList.add('empty')"><figcaption><i style="background:var(--blue)"></i>Atención jurídica</figcaption></figure>
+      <figure class="photo " data-file="FOTO_ATIPCO_01.jpg"><img src="img/FOTO_ATIPCO_01.jpg" alt="Atención jurídica" loading="lazy" onerror="this.parentNode.classList.add('empty')"><figcaption><i style="background:var(--blue)"></i>Atención jurídica</figcaption></figure>
     </div>
     <div class="t-item rv" style="--c:var(--navy)">
       <div class="t-text">
@@ -96,7 +145,7 @@
         <p>Espacios para niños, jóvenes, adultos y adulto mayor donde se aprende a debatir, argumentar y participar con pensamiento propio.</p>
         <p style="margin-top:10px"><span class="pend">Agregar: fechas, lugares y participantes</span></p>
       </div>
-      <figure class="photo p-yellow" data-file="FOTO_ATIPCO_06.jpg"><img src="FOTO_ATIPCO_06.jpg" alt="Formación ciudadana" loading="lazy" onerror="this.parentNode.classList.add('empty')"><figcaption><i style="background:var(--yellow)"></i>Formación ciudadana</figcaption></figure>
+      <figure class="photo p-yellow" data-file="FOTO_ATIPCO_06.jpg"><img src="img/FOTO_ATIPCO_06.jpg" alt="Formación ciudadana" loading="lazy" onerror="this.parentNode.classList.add('empty')"><figcaption><i style="background:var(--yellow)"></i>Formación ciudadana</figcaption></figure>
     </div>
     <div class="t-item rv" style="--c:var(--red)">
       <div class="t-text">
@@ -105,7 +154,7 @@
         <p>Atendemos desde diferentes instancias a los damnificados del terremoto.</p>
         <p style="margin-top:10px"><span class="pend">Agregar: lugar, qué se entregó y a cuántas familias</span></p>
       </div>
-      <figure class="photo p-red" data-file="FOTO_ATIPCO_03.jpg"><img src="FOTO_ATIPCO_03.jpg" alt="Ayuda humanitaria" loading="lazy" onerror="this.parentNode.classList.add('empty')"><figcaption><i style="background:var(--red)"></i>Ayuda humanitaria</figcaption></figure>
+      <figure class="photo p-red" data-file="FOTO_ATIPCO_03.jpg"><img src="img/FOTO_ATIPCO_03.jpg" alt="Ayuda humanitaria" loading="lazy" onerror="this.parentNode.classList.add('empty')"><figcaption><i style="background:var(--red)"></i>Ayuda humanitaria</figcaption></figure>
     </div>
   </div>
 </section>
@@ -113,7 +162,7 @@
 <section class="section tight">
   <div class="wrap">
     <div class="cta-band rv">
-      <img class="iso-mark" src="ISOTIPO_ATIPCO.png" alt="" aria-hidden="true">
+      <img class="iso-mark" src="img/ISOTIPO_ATIPCO.png" alt="" aria-hidden="true">
       <div><h2>¿Quieres ser parte de la próxima acción?</h2><p>Súmate como voluntario o aliado de la fundación.</p></div>
       <a class="btn btn-light" href="contacto.html?motivo=voluntariado">Quiero sumarme →</a>
     </div>
@@ -123,7 +172,7 @@
 <footer>
   <div class="wrap foot-grid">
     <div>
-      <img class="flogo" src="LOGO_ATIPCO_blanco.png" alt="ATIPCO · Fundación A Tiempo por Colombia" width="866" height="218">
+      <img class="flogo" src="img/LOGO_ATIPCO_blanco.png" alt="ATIPCO · Fundación A Tiempo por Colombia" width="866" height="218">
       <p>Comprometidos con Colombia. Trabajando por la solidaridad, la ayuda humanitaria y el desarrollo social en comunidades vulnerables del país.</p>
       <div class="social">
         <a href="#" aria-label="Instagram (pendiente)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
@@ -158,6 +207,6 @@
     <p>Este documento se publicará en la versión final del sitio. Mientras tanto, puedes solicitarlo a <a href="mailto:atipcofundacion@gmail.com">atipcofundacion@gmail.com</a>.</p>
   </div>
 </div>
-<script src="main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

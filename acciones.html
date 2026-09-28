@@ -70,44 +70,60 @@
         <div>
           <span class="tag green">Seguimiento del caso</span>
           <h3>La historia no termina con la entrega.</h3>
-          <p>Acompañamos a la familia después de recibir su vivienda. Aquí registramos cada visita.</p>
+          <p>Acompañamos a la familia antes, durante y después de recibir su vivienda.</p>
         </div>
       </div>
 
       <div class="followup-grid">
-        <ol class="fu-timeline" aria-label="Visitas de seguimiento">
+        <div class="ba" style="--pos:50%">
+          <img class="ba-after" src="img/FOTO_TRUJILLO_04.jpg" alt="Hoy: los niños en su nueva casa" loading="lazy">
+          <div class="ba-before"><img src="img/FOTO_TRUJILLO_01.jpg" alt="Antes: la vivienda donde vivía la familia" loading="lazy"></div>
+          <span class="ba-tag l">Antes · 2025</span><span class="ba-tag r">Hoy · 2026</span>
+          <span class="ba-handle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></span>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Deslizar para comparar antes y después">
+        </div>
+
+        <ol class="fu-timeline" aria-label="Línea de acompañamiento">
+          <li class="done">
+            <span class="fu-dot" aria-hidden="true"></span>
+            <div><small>Marzo 2025</small><b>Primera visita</b><p>Conocimos a la familia en la vivienda donde residía y comenzamos el acompañamiento.</p></div>
+          </li>
+          <li class="done">
+            <span class="fu-dot" aria-hidden="true"></span>
+            <div><small>Abril 2025</small><b>Red solidaria en marcha</b><p>Amigos, colaboradores y familiares se sumaron con donaciones para la familia.</p></div>
+          </li>
           <li class="done">
             <span class="fu-dot" aria-hidden="true"></span>
             <div><small>Enero 2026</small><b>Entrega oficial de la vivienda</b><p>La familia recibe las llaves de su casa en Trujillo.</p></div>
           </li>
-          <li>
+          <li class="done">
             <span class="fu-dot" aria-hidden="true"></span>
-            <div><small>Seguimiento 1 · <span class="pend">Fecha</span></small><b>Adaptación al nuevo hogar</b><p><span class="pend">Agregar: cómo se encuentra la familia</span></p></div>
-          </li>
-          <li>
-            <span class="fu-dot" aria-hidden="true"></span>
-            <div><small>Seguimiento 2 · <span class="pend">Fecha</span></small><b>Acceso a salud y educación</b><p><span class="pend">Agregar: avances de la madre y los niños</span></p></div>
+            <div><small>Septiembre 2026</small><b>Visita de seguimiento</b><p>Volvimos a encontrarnos con la familia en Trujillo.</p></div>
           </li>
           <li class="next">
             <span class="fu-dot" aria-hidden="true"></span>
             <div><small>Próxima visita</small><b>Seguimiento en curso</b><p>Seguiremos compartiendo el avance de la familia.</p></div>
           </li>
         </ol>
+      </div>
 
-        <div class="fu-media">
+      <div class="fu-media">
+        <div class="media-head">
+          <h4>Fotos y videos del caso</h4>
           <div class="media-filter" role="tablist" aria-label="Filtrar galería">
             <button type="button" class="on" data-filter="all" role="tab" aria-selected="true">Todo</button>
             <button type="button" data-filter="foto" role="tab" aria-selected="false">Fotos</button>
             <button type="button" data-filter="video" role="tab" aria-selected="false">Videos</button>
           </div>
-          <div class="gallery g-media">
-            <figure class="photo video" data-type="video" data-file="VIDEO_TRUJILLO_01.mp4"><video controls preload="metadata" playsinline poster="img/FOTO_TRUJILLO_01.jpg"><source src="video/VIDEO_TRUJILLO_01.mp4" type="video/mp4" onerror="this.closest('figure').classList.add('empty')"></video><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><figcaption><i style="background:var(--red)"></i>Video · Entrega de llaves</figcaption></figure>
-            <figure class="photo p-yellow" data-type="foto" data-file="FOTO_TRUJILLO_01.jpg"><img src="img/FOTO_TRUJILLO_01.jpg" alt="La familia frente a su nueva casa" loading="lazy" onerror="this.parentNode.classList.add('empty')"><figcaption><i style="background:var(--yellow)"></i>La familia en su casa</figcaption></figure>
-            <figure class="photo" data-type="foto" data-file="FOTO_TRUJILLO_02.jpg"><img src="img/FOTO_TRUJILLO_02.jpg" alt="Interior de la vivienda" loading="lazy" onerror="this.parentNode.classList.add('empty')"><figcaption><i style="background:var(--blue)"></i>Interior de la vivienda</figcaption></figure>
-            <figure class="photo p-red video" data-type="video" data-file="VIDEO_TRUJILLO_02.mp4"><video controls preload="metadata" playsinline poster="img/FOTO_TRUJILLO_03.jpg"><source src="video/VIDEO_TRUJILLO_02.mp4" type="video/mp4" onerror="this.closest('figure').classList.add('empty')"></video><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><figcaption><i style="background:var(--red)"></i>Video · Testimonio de la familia</figcaption></figure>
-            <figure class="photo p-yellow" data-type="foto" data-file="FOTO_TRUJILLO_03.jpg"><img src="img/FOTO_TRUJILLO_03.jpg" alt="Visita de seguimiento" loading="lazy" onerror="this.parentNode.classList.add('empty')"><figcaption><i style="background:#1FA855"></i>Visita de seguimiento</figcaption></figure>
-            <figure class="photo" data-type="foto" data-file="FOTO_TRUJILLO_04.jpg"><img src="img/FOTO_TRUJILLO_04.jpg" alt="Equipo ATIPCO con la familia" loading="lazy" onerror="this.parentNode.classList.add('empty')"><figcaption><i style="background:var(--navy)"></i>Equipo ATIPCO</figcaption></figure>
-          </div>
+        </div>
+        <div class="gallery g-media">
+            <figure class="photo video s-v" data-type="video" data-file="VIDEO_TRUJILLO_01.mp4"><video controls preload="none" playsinline muted poster="img/FOTO_TRUJILLO_VIDEO_01.jpg"><source src="video/VIDEO_TRUJILLO_01.mp4" type="video/mp4" onerror="this.closest('figure').classList.add('empty')"></video><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><figcaption><i style="background:var(--red)"></i>Video · Así es la casa nueva</figcaption></figure>
+            <figure class="photo s-22" data-type="foto" data-file="FOTO_TRUJILLO_07.jpg"><img src="img/FOTO_TRUJILLO_07.jpg" alt="La familia durante la visita de seguimiento" loading="lazy" style="object-position:center 60%" onerror="this.parentNode.classList.add('empty')"><figcaption><i style="background:#1FA855"></i>La familia hoy · 2026</figcaption></figure>
+            <figure class="photo video s-v" data-type="video" data-file="VIDEO_TRUJILLO_02.mp4"><video controls preload="none" playsinline poster="img/FOTO_TRUJILLO_VIDEO_02.jpg"><source src="video/VIDEO_TRUJILLO_02.mp4" type="video/mp4" onerror="this.closest('figure').classList.add('empty')"></video><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><figcaption><i style="background:var(--red)"></i>Video · La mamá nos cuenta su historia</figcaption></figure>
+            <figure class="photo s-21" data-type="foto" data-file="FOTO_TRUJILLO_02.jpg"><img src="img/FOTO_TRUJILLO_02.jpg" alt="La mamá con sus tres hijos en 2025" loading="lazy" style="object-position:center 55%" onerror="this.parentNode.classList.add('empty')"><figcaption><i style="background:var(--yellow)"></i>Así los conocimos · 2025</figcaption></figure>
+            <figure class="photo s-22" data-type="foto" data-file="FOTO_TRUJILLO_03.jpg"><img src="img/FOTO_TRUJILLO_03.jpg" alt="Donaciones reunidas por la red solidaria" loading="lazy" style="object-position:center 55%" onerror="this.parentNode.classList.add('empty')"><figcaption><i style="background:var(--blue)"></i>Donaciones de la red solidaria</figcaption></figure>
+            <figure class="photo s-22" data-type="foto" data-file="FOTO_TRUJILLO_05.jpg"><img src="img/FOTO_TRUJILLO_05.jpg" alt="Niño estrenando su clóset en la casa nueva" loading="lazy" style="object-position:center 40%" onerror="this.parentNode.classList.add('empty')"><figcaption><i style="background:var(--red)"></i>Su propio espacio</figcaption></figure>
+            <figure class="photo s-22" data-type="foto" data-file="FOTO_TRUJILLO_06.jpg"><img src="img/FOTO_TRUJILLO_06.jpg" alt="La familia en el pasillo de su nueva casa" loading="lazy" style="object-position:center 60%" onerror="this.parentNode.classList.add('empty')"><figcaption><i style="background:var(--navy)"></i>Primer día en casa</figcaption></figure>
         </div>
       </div>
     </div>
@@ -126,7 +142,7 @@
         <p>Higiene oral, medicina general, optometría, actividades lúdico-recreativas para niños, olla comunitaria y cierre con cine al barrio, concertadas con líderes y comunidad.</p>
         <p style="margin-top:10px"><span class="pend">Agregar: fechas, barrios y personas atendidas</span></p>
       </div>
-      <figure class="photo p-yellow" data-file="FOTO_ATIPCO_08.jpg"><img src="img/FOTO_ATIPCO_08.jpg" alt="Jornada de bienestar" loading="lazy" onerror="this.parentNode.classList.add('empty')"><figcaption><i style="background:var(--yellow)"></i>Jornada de bienestar</figcaption></figure>
+      <figure class="photo p-yellow" data-file="FOTO_JORNADA_04.jpg"><img src="img/FOTO_JORNADA_04.jpg" alt="Jornada de bienestar" loading="lazy" onerror="this.parentNode.classList.add('empty')"><figcaption><i style="background:var(--yellow)"></i>Jornada de bienestar</figcaption></figure>
     </div>
     <div class="t-item rv">
       <div class="t-text">

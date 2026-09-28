@@ -73,9 +73,16 @@
     $('#formReset').addEventListener('click', () => { form.reset(); $('#formOk').classList.remove('show'); });
   }
 
+  // Comparador antes / después
+  $$('.ba').forEach(ba => {
+    const r = $('.ba-range', ba);
+    const set = () => ba.style.setProperty('--pos', r.value + '%');
+    r.addEventListener('input', set); set();
+  });
+
   // Filtro de galería (fotos / videos)
   $$('.media-filter').forEach(bar => {
-    const grid = bar.nextElementSibling;
+    const grid = bar.closest('.fu-media')?.querySelector('.gallery') || bar.nextElementSibling;
     bar.addEventListener('click', e => {
       const b = e.target.closest('button'); if (!b) return;
       $$('button', bar).forEach(x => { x.classList.toggle('on', x === b); x.setAttribute('aria-selected', x === b); });

@@ -706,3 +706,13 @@ a.citem u{text-decoration-color:var(--red);text-underline-offset:3px;color:var(-
 .media-head h4{font-family:var(--font-d);color:var(--navy);font-size:1.25rem}
 .media-head .media-filter{margin:0}
 .photo.video video{background:#0E1B33}
+
+/* Línea oficial – Ruta de Protección de Derechos en Salud */
+.route-line{background:#EEF4FC;border:1px solid #D5E3F5;border-radius:18px;padding:18px 20px 20px;display:grid;gap:4px}
+.route-line-label{font-family:var(--font-d);font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--blue)}
+.route-line-num{font-family:var(--font-d);font-weight:800;font-size:1.45rem;color:var(--navy);text-decoration:none;margin-bottom:12px}
+.route-line-num:hover{color:var(--blue)}
+.route-line .btn svg{width:20px;height:20px;flex:none}
+.btn-wa{background:#1FA855;color:#fff;box-shadow:0 8px 20px -10px rgba(31,168,85,.8)}
+.btn-wa:hover{background:#178A45;transform:translateY(-2px)}
+@media (max-width:520px){.route-line .btn{width:100%}}
